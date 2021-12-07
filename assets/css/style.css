@@ -11,6 +11,7 @@
 :root {
   --mainTextColor: #2b044d;
   --white: #ffffff;
+  --black: #000000;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
 
@@ -331,7 +332,7 @@ p{
 }
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -342,8 +343,30 @@ p{
   color: #fff;
   background: #eb5d1e;
 }
+#hero .btn-get-startedOutline {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border: 2px solid #eb5d1e;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: var(--mainTextColor);
+  background: transparent;
+}
+
 #hero .btn-get-started:hover {
+  background: transparent;
+  border: 2px solid #eb5d1e;
+  color: #000000;
+}
+#hero .btn-get-startedOutline:hover {
   background: #ef7f4d;
+  color: var(--white);
 }
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -508,8 +531,9 @@ section {
   color: #f39e7a;
 }
 .about p {
-  font-size: 15px;
-  color: var(--mainTextColor);
+  font-size: 16px;
+  /* color: var(--mainTextColor); */
+  color: var(--black);
 }
 @media (max-width: 991px) {
   .about .about-img img {
